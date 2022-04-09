@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-color: #1c1b1b;
+    margin: 0;
+    padding: 0;
+}
+
+.left-content img{
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 570px;
+    min-height: 570px;
+    object-fit: cover;
+}
+
+.right-content{
+    width: 400px;
+    height: 570px;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.right-content h6{
+    font-size: 20px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: .2em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.right-content p{
+    font-size: 13px !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.right-content input{
+    display: flex;
+    padding: 5px 14px;
+    border-radius: 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid #cfcfcf;
+}
+
+.right-content input:focus{
+    border: 1px solid black;
+    border-radius: 0;
+    outline: none;
+}
+
+.right-content input::-webkit-input-placeholder{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.right-content #btn-1{
+    background-color: white;
+    color: black;
+    padding: 8px 14px;
+    border: 1px solid #1c1b1b;
+    justify-content: center;
+    letter-spacing: 3px;
+    font-size: 14px; 
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    transition: .5s ease-in;
+    cursor: pointer;
+}
+
+.right-content #btn-1:hover{
+    box-shadow: inset 300px 0 0 0 #1c1b1b;
+    color: white;
+}
+
+.right-content .form-elements #ipt-email{
+    margin-bottom: 2%;
+}
+
+.right-content .form-elements #ipt-fname{
+    margin-bottom: 2%;
+}
+
+.right-content .form-elements #ipt-lname{
+    margin-bottom: 2%;
+}
+
+.right-content .inside-the-content{
+    height: 570px;
+    padding-top: 9rem;
+}
+
+.register .right-content .inside-the-content{
+    padding-top: 6.5rem;
+    height: 570px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .left-content img{
+        max-width: 768px !important;
+        max-height: max-content;
+    }
+
+    .right-content{
+        width: 768px !important;
+    }
+
+    .right-content input{
+        width: 40%;
+    }
+
+    .right-content #btn-1:hover{
+    box-shadow: inset 310px 0 0 0 #1c1b1b;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .right-content{
+        width: 375px;
+    }
+
+    .left-content img{
+        max-width: 375px;
+        min-width: 375px;
+    }
+}
